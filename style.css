@@ -5,7 +5,7 @@ Description: Warm, candid, natural light family & generation photography theme f
 Author: Gary Wallage
 Author URI: https://garywallage.uk
 Template: gary-wedding-pro
-Version: 1.0.3
+Version: 1.0.4
 License: GNU General Public License v2 or later
 Text Domain: gary-family-pro
 */
@@ -15,11 +15,11 @@ Text Domain: gary-family-pro
     --brand-bg: #F7F9F6;              /* Fresh Meadow Alabaster */
     --brand-black: #1E2D24;           /* Deep Forest Slate */
     --brand-text: #1E2D24;
-    --brand-accent: #2C5E3B;          /* Forest Green Primary */
-    --brand-gold-light: #7BB661;      /* Warm Meadow Accent */
+    --brand-accent: #7B8C7A;          /* Forest Green Primary */
+    --brand-gold-light: #D27D56;      /* Warm Meadow Accent */
     --brand-sage: #A9DFBF;            /* Soft Sage Highlight */
     --brand-white: #FFFFFF;
-    --brand-border: rgba(44, 94, 59, 0.25);
+    --brand-border: rgba(123, 140, 122, 0.35);
     
     /* Typography & Hierarchy (Unified Wedding Standard) */
     --font-primary: 'Lato', sans-serif;
@@ -85,4 +85,15 @@ body {
 /* Explicit Blacksword Script Header Branding */
 .site-title-blacksword {
     font-family: 'Blacksword', cursive !important;
+}
+
+
+/* Site-Specific Header Accent Line & Hover Highlights */
+.site-header {
+    border-bottom: 2px solid var(--brand-accent) !important;
+}
+.gw-genre-link.is-current,
+.gw-genre-link:hover {
+    color: var(--brand-gold-light) !important;
+    border-bottom-color: var(--brand-gold-light) !important;
 }

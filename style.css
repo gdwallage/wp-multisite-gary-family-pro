@@ -5,7 +5,7 @@ Description: Warm, candid, natural light family & generation photography theme f
 Author: Gary Wallage
 Author URI: https://garywallage.uk
 Template: gary-wedding-pro
-Version: 1.0.2
+Version: 1.0.3
 License: GNU General Public License v2 or later
 Text Domain: gary-family-pro
 */
@@ -21,17 +21,15 @@ Text Domain: gary-family-pro
     --brand-white: #FFFFFF;
     --brand-border: rgba(44, 94, 59, 0.25);
     
-    /* Typography & Hierarchy */
-    --font-serif: "Playfair Display", "Cinzel", "Georgia", serif;
-    --font-sans: "Inter", "Helvetica Neue", -apple-system, sans-serif;
-    --font-script: "Pinyon Script", "Cormorant Garamond", serif;
-    --font-primary: var(--font-serif);   /* Override Wedding parent — use this site's serif as heading font */
+    /* Typography & Hierarchy (Unified Wedding Standard) */
+    --font-primary: 'Lato', sans-serif;
+    --font-script: 'Blacksword', cursive;
 }
 
 body {
     background-color: var(--brand-bg);
     color: var(--brand-text);
-    font-family: var(--font-sans);
+    font-family: var(--font-primary);
     letter-spacing: 0.01em;
 }
 
